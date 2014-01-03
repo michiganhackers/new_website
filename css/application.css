@@ -1,0 +1,178 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	margin: 0 0;
+}
+
+article{
+}
+
+p{
+  color: #FF3D00;
+  font-size: 42px;
+}
+
+h4{
+  font-size: 22px
+}
+
+#nav-content{
+  padding-top: 60px;
+  font-size: 20px;
+}
+
+#nav-content >div{
+  position: relative;
+}
+
+#nav-content > div span{
+  position: relative;
+}
+
+
+.global-nav-visible{
+  width: 150px;
+  height: 400px;
+  background-color: red;
+}
+
+.global-nav{
+  position: fixed;
+  z-index: 100;
+  right: 25px;
+  top: 25px;
+  color: #797979;
+}
+
+.nav-box{
+  position: relative;
+  float: right;
+  height: 35px;
+  width: 35px;
+  border: 8px solid #797979;
+}
+
+.global-nav-trigger{
+  width: 75px;
+  height: 50px;
+  background-color: blue;
+}
+
+.hacker-name-link{
+  color: #797979;
+  text-decoration: none;
+}
+
+.hacker-name-link:hover{
+  text-decoration: none;
+  color: #FF3D00;
+}
+
+.hacker-title{
+  margin: 40px 0px 100px 0px;
+/*  font-family: "Trebuchet MS", Helvetica, sans-serif;
+*/  
+  font-family: Ultramagnetic, Helvetica;
+  font-weight: bold;
+  font-size: 64px;
+  color: white;
+  width: 500px;
+  padding: 0px 5px;
+  background-color: #FF3D00;
+  border-radius: 2px;
+}
+
+.hacker-hr img{
+  position: relative;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.page{
+  position: relative;
+}
+
+#splash{
+  background-color: #FF3D00;
+  position: relative;
+}
+
+#hacker-splash-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -228px;
+}
+
+#build-break-repeat-img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#what-we-do{
+  padding: 10% 10%;
+}
+
+.tile{
+  padding: 20px 20px;
+  height: 300px;
+}
+
+.inner-tile{  
+  position: relative;
+  width: 100%;
+  height: 260px;
+  box-shadow: 10px 10px 10px;
+  text-align: center;
+  border: 8px solid #FF3D00;
+  border-radius: 3px;
+}
+
+.tile-content{
+}
+
+.name-container{
+  margin-right: 5px;
+}
+
+.first-name{
+  font-family: Helvetica;
+  font-size: 42px;
+  color: #797979;
+}
+
+.last-name{
+  margin-top: -15px;
+  font-family: Helvetica;
+  font-size: 26px;
+  color: #FF3D00;
+}
+
+.profile-picture{
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-picture-corner{
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 80px;
+  width: 80px;
+}
+.profile-picture-img-corner{
+  border-radius: 10px;  
+}
+
+.label{
+  margin: 2px 5px;
+}
+
+.wrap-text}{
+  white-space: normal;
+}
+
+
