@@ -1,137 +1,79 @@
 <!DOCTYPE html>
-<html ng-app>
- <head>
-    <title> Michigan Hackers </title>
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script> 
-    
-    <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    -->
-    <link rel="stylesheet" href="css/jquery-ui.css" />
-    <script src="js/jquery-ui.js"></script>
-
-        <!-- bootstrap -->
-    <script src="js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/> 
-    
-    <!-- Angular -->
-    <script src="js/angular.js"></script> 
-    
-     <!-- application files -->
-    <link rel="stylesheet" type="text/css" href="css/application.css"> 
-    <script type="text/javascript" src="hackers/hacker_data.js"></script>    
-    <script type="text/javascript" src="js/application.js"></script>
-    <script type="text/javascript" src="js/angular_application.js"></script>
-
-  </head>
-  <body> 
-
-   
-
-    <article class="page" id="splash">
-      <img id="hacker-splash-img" src="img/hacker_splash.jpg">
-    </article>
-    <article class="page" id="what-we-do">
-      <div id="what-we-do-content">
-      <h1 class="hacker-title"> WHAT WE DO </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec est sit amet metus mattis porta ut id odio. Nunc facilisis dolor id mollis aliquet. Nullam id lacinia velit. Quisque el- ementum feugiat justo, id condimentum sem posuere in. Ali- quam erat volutpat. Proin iaculis ac orci vitae bibendum. Cras sem metus, gravida at quam a, venenatis viverra nunc. Pel- lentesque condimentum non purus vitae interdum. In non velit a nulla scelerisque viverra. Morbi iaculis euismod justo eu ornare. Praesent laoreet vel diam quis vestibulum. Integer metus justo, hendrerit sit amet laoreet vel, fringilla sit amet nulla. Donec eget est urna. In scelerisque mi sed euismod ultrices.
-
-      </p>
-      </div>
-    </article>
-    <article class="page" id="build-break-repeat">
-      <img id="build-break-repeat-img" src="img/build_break_repeat.jpg">
-    </article>
-    <article class="page container" id="events">
-      <h1 class="hacker-title"> EVENTS </h1>
-    </article>
-    <article class="hacker-hr" >
-      <img src="img/hacker_hr.jpg">
-    </article>
-    <article class="page container" id="profile_tiles" ng-controller="profileTilesController">
-      <h1 class="hacker-title"> WHO WE ARE </h1>
-      <h4> 
-      NOTE: Names that change color on hover are links to profile pages (created by that hacker)
-      </h4>
-      <div class= "row">
-        <div class="col-lg-3 tile" ng-repeat="person in hackers">
-          <div class="inner-tile">
-            <div class="profile-picture">
-              <img class="img-responsive" src="hackers/profile_pictures/{{person.picture_url}}">
-            </div>
-            <div class="row">
-              <div class="col-lg-8 pull-right name-container">
-                <div class="first-name text-right">
-                  <span ng-switch="person.link">
-                    <span ng-switch-when="none">
-                      <b>{{person.first}}</b>
-                    </span>
-                    <span ng-switch-default>
-                      <a class="hacker-name-link" href="hackers/link_pages/{{person.link}}" ng-if="person.link | filter:'!html' ">
-                      <b>{{person.first}}</b>
-                      </a>
-                    </span>
-                  </span>
-
-                </div>
-                <div class = "last-name text-right">
-                <b>{{person.last}}</b>
-                </div>
-              </div>
-              <div class="col-lg-12 ">
-                <div class="row">
-                  <div  class="col-lg-6 text-center">
-                    <h4> <small class="text-muted">Year</small> {{person.year}}</h4>
-                  </div>  
-                  <div  class="col-lg-6 text-left">
-                    <h4> <small class="text-muted">Major</small> CSE</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 text-center">
-              <h5 class="text-muted">Knows</h5>
-                <div class"row">
-                  <span class="label label-success pull-left" ng-repeat="item in person.knows">{{item}} </span>
-                </div>
-              </div>
-              <div class="col-lg-6 text-center">
-              <h5 class="text-muted">Learning</h5>
-                <div class"row">
-                  <span class="label label-warning pull-left " ng-repeat="item in person.learning">{{item}} </span>
-                </div>
-
-              </div>
-            </div>
-
-          </div> <!-- End inner tile -->
-        </div>
-      </div>
-    </article>
-    <article class="hacker-hr" >
-      <img src="img/hacker_hr.jpg">
-    </article>
-    <article class="page container">
-      <h1 class="hacker-title">CONTACT </h1>
+<html dir="ltr" lang="en-US">
+  <head>
       
-    </article>
+      <title>Michigan Hackers</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Michigan Hackers">
+      <meta name="keywords" content="Michigan, Hackers, UMich, University of Michigan, MHacks, Engineering">
+      <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <article class="page container" id="sponsors">
-      <h1 class="hacker-title">SPONSORS </h1>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700">
 
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-3 float-left">
-          <img class="img-responsive" src="img/google_logo.jpeg">
-        </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-3 float-left">
-          <img class="img-responsive" src="img/facebook_logo.png">          
-        </div>
-        <div class="col-lg-2"></div>
+      <meta property="og:title" content="Michigan Hackers">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="http://michiganhackers.org/img/logo.png">
+      <meta property="og:url" content="http://michiganhackers.org">
+  </head>
+  <body>
+
+    <div class="section orange" id="header">
+      <div class="mid">
+        <img class="logo" src="img/logo.png">
       </div>
-    </article>
+    </div>
+
+    <div class="section laptop-img" id="mission">
+      <div class="mid">
+        <div class="rect">
+          <h1>
+            Michigan Hackers exists to foster a community of individuals who enjoy expressing creativity through technology. 
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="section orange short" id="definitions">
+      <div class="mid">
+        <div class="block">
+          <img src="x">
+          <h2>Builder</h2>
+        </div>
+        <div class="block">
+          <img src="x">
+          <h2>Scholar</h2>
+        </div>
+        <div class="block">
+          <img src="x">
+          <h2>Socialite</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="section meeting-img" id="mission">
+      <div class="mid">
+        <div class="rect">
+          <h1>
+            It's all about creation - we turn ideas into projects, and we’re building a community of like-minded individuals bent on making the world a better place. 
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section orange short" id="contact">
+      <div class="mid">
+        <div class="block">
+
+        </div>
+        <div class="block">
+        </div>
+        <div class="block">
+        </div>
+      </div>
+    </div>
 
 
   </body>

@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	color: inherit;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 40px; /* change with screen size */
+	color: white;
+	min-width: 650px;
+}
+
+.section {
+	min-height: 500px;  /* change with screen size */
+	max-height: 1000px;
+    width: 100%;
+    display: table;
+    padding: 40px 0px;
+}
+
+.short {
+	min-height: 200px;
+}
+
+.band {
+	height: 20px;    
+	width: 100%;
+	background-color: #525354;
+}
+
+.logo {
+	width: 50%;
+	max-width: 500px;
+	min-width: 300px;
+}
+
+.mid {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+	text-align: center;
+}
+
+.rect {
+	width: 70%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px #000;
+	margin: 0 auto;
+}
+
+.block {
+	display: inline-block;
+	width: 25%;
+}
+
+.block h2 {
+
+}
+
+.block img {
+
+}
+
+.laptop-img {
+	background: url(/img/laptop.jpg);
+	background-size: cover;
+}
+
+.meeting-img {
+	background: url(/img/meeting.jpg) #FF3C00;
+	background-size: cover;
+}
+
+.build-img {
+	background: url(/img/build_break_repeat.jpg) #FF3C00;
+	background-size: cover;
+}
+
+.B-img {
+	background: url(/img/B.jpg) #FF3C00;
+	background-size: cover;
+}
+
+
+.D-img {
+	background: url(/img/D.jpg) #FF3C00;
+	background-size: cover;
+}
+.E-img {
+	background: url(/img/E.jpg) #FF3C00;
+	background-size: cover;
+}
+
+.orange {
+	background: url(/img/hacker_hr.jpg) #FF3C00;
+}
