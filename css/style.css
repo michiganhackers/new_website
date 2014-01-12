@@ -33,11 +33,11 @@ body {
 }
 
 .section {
-	min-height: 500px;  /* change with screen size */
+	padding: 40px 0px;
+	min-height: 450px;  /* change with screen size */
 	max-height: 1000px;
     width: 100%;
     display: table;
-    padding: 40px 0px;
 }
 
 .short {
@@ -50,9 +50,9 @@ body {
 }
 
 .logo {
-	width: 50%;
+	width: 40%;
 	max-width: 500px;
-	min-width: 300px;
+	min-width: 200px;
 }
 
 .mid {
@@ -114,5 +114,5 @@ body {
 }
 
 .orange {
-	background:  #FF3C00;/*url(/img/hacker_hr.jpg)*/
+	background: url(/img/hacker_hr.jpg) #FF3C00;/**/
 }
