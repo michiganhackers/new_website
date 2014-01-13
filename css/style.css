@@ -14,13 +14,14 @@ body {
 	min-width: 650px;
 }
 
-.nav {
+#nav {
+	width: 100%;
 	text-align: center;
 	padding-top: 0px;
-	padding-bottom: 7px;
+	padding-bottom: 9px;
 }
 
-.nav a {
+#nav a {
 	display: inline-block;
 	margin: 10px 10px;
 	margin-top: 0;
@@ -29,14 +30,14 @@ body {
 	text-decoration: none;
 }
 
-.nav a:hover {
+#nav a:hover {
 	border-bottom: 5px solid white;
 	margin-bottom: -5px;
 }
 
 .section {
 	padding: 40px 0px;
-	min-height: 450px;  /* change with screen size */
+	min-height: 480px;  /* change with screen size */
 	max-height: 1000px;
     width: 100%;
     display: table;
@@ -54,7 +55,7 @@ body {
 .logo {
 	width: 40%;
 	max-width: 500px;
-	min-width: 200px;
+	min-width: 300px;
 }
 
 .mid {
@@ -107,6 +108,11 @@ body {
 
 .hack-img {
 	background: url(/img/hack.jpg) #FF3C00;
+	background-size: cover;
+}
+
+.mhacks-img {
+	background: url(/img/mhacks.jpg) #FF3C00;
 	background-size: cover;
 }
 

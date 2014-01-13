@@ -6,10 +6,13 @@ $(document).ready(function(){
 		$('#header').css("min-height", window_height - (80 + 60));
 	}
 
-	////keep window sizes
-	$(window).resize(function(){
+	/*$(window).resize(function(){
 		resizePages();
-	});
+	});*/
 	resizePages();
+
+	$("#nav").sticky({
+		topSpacing:0
+	});
 
 });
