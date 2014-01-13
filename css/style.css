@@ -65,12 +65,24 @@ body {
 	text-align: center;
 }
 
+.bottom {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+  max-height: 55px;
+}
+
 .rect {
 	width: 70%;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0.6);
 	text-shadow: 0 1px 1px #000;
 	margin: 0 auto;
+}
+
+.block-contact {
+  display: inline-block;
+  width: 4%;
 }
 
 .block {
@@ -88,9 +100,41 @@ body {
 
 .copy {
 	text-align: center;
-	font-size: 15px;
-	padding-top: 4px;
+	font-size: 13px;
 }
+
+.contact-us {
+  text-align: center;
+  font-size: 36px;
+}
+
+.facebook {  
+  background-size: 50px auto;
+  background-position:center center;
+  background-repeat:no-repeat;
+  display: block;
+  height: 50px;
+  background-image: url(/img/sq_fb.png);
+}
+
+.mail {
+  background-size: 44px auto;
+  background-position:center center;
+  background-repeat:no-repeat;
+  display: block;
+  height: 50px;
+  background-image: url(/img/sq_mail.png);
+}
+
+.github {
+  background-size: 50px auto;
+  background-position:center center;
+  background-repeat:no-repeat;
+  display: block;
+  height: 50px;
+  background-image: url(/img/sq_git.png);
+}
+
 .laptop-img {
 	background: url(/img/laptop.jpg);
 	background-size: cover;
