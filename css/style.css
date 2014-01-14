@@ -44,7 +44,7 @@ body {
 }
 
 .short {
-	min-height: 200px;
+	min-height: 150px;
 }
 
 .band {
@@ -59,17 +59,10 @@ body {
 }
 
 .mid {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
 	text-align: center;
-}
-
-.bottom {
-  vertical-align: middle;
-  width: 100%;
-  text-align: center;
-  max-height: 55px;
 }
 
 .rect {
@@ -80,14 +73,24 @@ body {
 	margin: 0 auto;
 }
 
-.block-contact {
-  display: inline-block;
-  width: 4%;
-}
-
 .block {
 	display: inline-block;
+}
+
+.w10 {
+	width: 10%;
+}
+
+.w25 {
 	width: 25%;
+}
+
+.w33 {
+	width: 33%;
+}
+
+.w50 {
+	width: 50%;
 }
 
 .block h2 {
@@ -98,6 +101,15 @@ body {
 
 }
 
+.btn_img img {
+	width: 100px;
+}
+
+.btn_img img:hover {
+	width: 105px;
+	margin-top: -5px;
+}
+
 .copy {
 	text-align: center;
 	font-size: 13px;
@@ -106,33 +118,6 @@ body {
 .contact-us {
   text-align: center;
   font-size: 36px;
-}
-
-.facebook {  
-  background-size: 50px auto;
-  background-position:center center;
-  background-repeat:no-repeat;
-  display: block;
-  height: 50px;
-  background-image: url(/img/sq_fb.png);
-}
-
-.mail {
-  background-size: 44px auto;
-  background-position:center center;
-  background-repeat:no-repeat;
-  display: block;
-  height: 50px;
-  background-image: url(/img/sq_mail.png);
-}
-
-.github {
-  background-size: 50px auto;
-  background-position:center center;
-  background-repeat:no-repeat;
-  display: block;
-  height: 50px;
-  background-image: url(/img/sq_git.png);
 }
 
 .laptop-img {
@@ -161,5 +146,5 @@ body {
 }
 
 .orange {
-	background: url(/img/hacker_hr.jpg) #FF3C00;/**/
+	background: #FF3C00;/*url(/img/hacker_hr.jpg)*/
 }
