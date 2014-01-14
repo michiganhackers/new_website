@@ -6,6 +6,16 @@
 	color: inherit;
 }
 
+h1 {
+	font-size: 40px;	
+}
+h2 {
+	font-size: 30px;	
+}
+h3 {
+	font-size: 25px;	
+}
+
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-weight: 100;
@@ -39,8 +49,8 @@ body {
 	padding: 40px 0px;
 	min-height: 480px;  /* change with screen size */
 	max-height: 1000px;
-  width: 100%;
-  display: table;
+	width: 100%;
+	display: table;
 }
 
 .short {
@@ -77,8 +87,17 @@ body {
 	display: inline-block;
 }
 
+.block img {
+	width: 250px;
+	margin-top: 30px;
+}
+
 .w10 {
 	width: 10%;
+}
+
+.w15 {
+	width: 15%;
 }
 
 .w25 {
@@ -98,15 +117,16 @@ body {
 }
 
 .block img {
-
+	width: 90%;
 }
 
+
 .btn_img img {
-	width: 100px;
+	width: 90px;
 }
 
 .btn_img img:hover {
-	width: 105px;
+	width: 95px;
 	margin-top: -5px;
 }
 
@@ -121,30 +141,35 @@ body {
 }
 
 .laptop-img {
-	background: url(/img/laptop.jpg);
+	background: url('../img/laptop.jpg');
 	background-size: cover;
 }
 
 .meeting-img {
-	background: url(/img/meeting.jpg) #FF3C00;
+	background: url('../img/meeting.jpg') #FF3C00;
 	background-size: cover;
 }
 
 .build-img {
-	background: url(/img/build_break_repeat.jpg) #FF3C00;
+	background: url('../img/build_break_repeat.jpg') #FF3C00;
 	background-size: cover;
 }
 
 .hack-img {
-	background: url(/img/hack.jpg) #FF3C00;
+	background: url(../img/hack.jpg) #FF3C00;
 	background-size: cover;
 }
 
 .mhacks-img {
-	background: url(/img/mhacks.jpg) #FF3C00;
+	background-image: url('../img/mhacks.jpg');
+	background-color: #FF3C00;
 	background-size: cover;
 }
 
+.grey {
+	background: #999;
+}
+
 .orange {
-	background: #FF3C00;/*url(/img/hacker_hr.jpg)*/
+	background: #FF3C00;
 }
