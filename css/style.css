@@ -92,30 +92,42 @@ body {
 	padding-top: 4px;
 }
 .laptop-img {
-	background: url(/img/laptop.jpg);
+	background: url('../img/laptop.jpg');
 	background-size: cover;
 }
 
 .meeting-img {
-	background: url(/img/meeting.jpg) #FF3C00;
+	background: url('../img/meeting.jpg') #FF3C00;
 	background-size: cover;
 }
 
 .build-img {
-	background: url(/img/build_break_repeat.jpg) #FF3C00;
+	background: url('../img/build_break_repeat.jpg') #FF3C00;
 	background-size: cover;
 }
 
 .hack-img {
-	background: url(/img/hack.jpg) #FF3C00;
+	background: url(../img/hack.jpg) #FF3C00;
 	background-size: cover;
 }
 
 .mhacks-img {
-	background: url(/img/mhacks.jpg) #FF3C00;
+	background-image: url('../img/mhacks.jpg');
+	background-color: #FF3C00;
 	background-size: cover;
 }
 
 .orange {
-	background: url(/img/hacker_hr.jpg) #FF3C00;/**/
+	background: url(../img/hacker_hr.jpg) #FF3C00;/**/
+}
+.sponsor
+{
+     width:100%;
+    background-color: inherit;
+ 
+    }
+.sponsorTitle
+{
+    text-align:center;
+    background-color: inherit;
 }
