@@ -1,4 +1,8 @@
-new_website
+The Michigan Hackers Website
 ===========
+#### michiganhackers.org
 
-New website with no back end
+### To Run Locally
+- `python -m SimpleHTTPServer`
+- Visit `localhost:8000` in your browser.
+
