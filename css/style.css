@@ -47,14 +47,14 @@ body {
 
 .section {
 	padding: 40px 0px;
-	min-height: 480px;  /* change with screen size */
+	height: 480px;  /* change with screen size */
 	max-height: 1000px;
 	width: 100%;
 	display: table;
 }
 
 .short {
-	min-height: 150px;
+	height: 150px;
 }
 
 .band {
