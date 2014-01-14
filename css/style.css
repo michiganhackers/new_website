@@ -148,6 +148,7 @@ body {
 .meeting-img {
 	background: url('../img/meeting.jpg') #FF3C00;
 	background-size: cover;
+	background-position: right bottom;
 }
 
 .build-img {
