@@ -15,4 +15,11 @@ $(document).ready(function(){
 		topSpacing:0
 	});
 
+	$('a[href*=#]').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	    return false;
+	});
+
 });
