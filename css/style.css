@@ -120,14 +120,23 @@ body {
 	width: 90%;
 }
 
+.block img:hover {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
 .btn_img img {
-	width: 90px;
+	width: 120px;
 }
 
 .btn_img img:hover {
-	width: 95px;
+	width: 125px;
 	margin-top: -5px;
+	margin-bottom: -2.5px;
 }
 
 .copy {
@@ -141,29 +150,29 @@ body {
 }
 
 .laptop-img {
-	background: url('../img/laptop.jpg');
+	background: url(../img/laptop.jpg);
 	background-size: cover;
 }
 
 .meeting-img {
-	background: url('../img/meeting.jpg') #FF3C00;
+	background: url(../img/meeting.jpg) #ef5b2e;
 	background-size: cover;
 	background-position: right bottom;
 }
 
 .build-img {
-	background: url('../img/build_break_repeat.jpg') #FF3C00;
+	background: url(../img/build_break_repeat.jpg) #ef5b2e;
 	background-size: cover;
 }
 
 .hack-img {
-	background: url(../img/hack.jpg) #FF3C00;
+	background: url(../img/hack.jpg) #ef5b2e;
 	background-size: cover;
 }
 
 .mhacks-img {
-	background-image: url('../img/mhacks.jpg');
-	background-color: #FF3C00;
+	background-image: url(../img/mhacks.jpg);
+	background-color: #ef5b2e;
 	background-size: cover;
 }
 
@@ -173,5 +182,5 @@ body {
 }
 
 .orange {
-	background: #FF3C00;
+	background: #ef5b2e;
 }
