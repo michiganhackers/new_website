@@ -16,4 +16,10 @@ $(document).ready(function(){
 	    return false;
 	});
 
+  $(window).scroll(function() {
+		if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+			$(".block.w15.btn_img").fadeIn("slow");
+		}
+	});
+
 });
