@@ -66,7 +66,7 @@ body {
 }
 
 .shorter {
-  height: 50px;
+  height: 200px;
 }
 
 .band {
@@ -98,6 +98,10 @@ body {
 
 .block {
 	display: inline-block;
+}
+
+.block.w15.btn_img {
+	display: none;
 }
 
 .block img {
