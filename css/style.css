@@ -57,6 +57,10 @@ body {
 	height: 150px;
 }
 
+.shorter {
+  height: 50px;
+}
+
 .band {
 	height: 30px;    
 	width: 100%;
