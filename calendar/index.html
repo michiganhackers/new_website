@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+      
+      <title>Michigan Hackers - Calendar</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Michigan Hackers">
+      <meta name="keywords" content="Michigan, Hackers, UMich, University of Michigan, MHacks, Engineering">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, user-scalable=no">
+
+      <link rel="stylesheet" href="fullcalendar.css">
+
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/animate.css">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,700">
+      
+
+      <meta property="og:title" content="Michigan Hackers">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="http://michiganhackers.org/img/logo_square.jpg">
+      <meta property="og:url" content="http://michiganhackers.org">
+      <meta property="og:description" content="Michigan Hackers exists to foster a community of individuals who enjoy expressing creativity through technology."/>
+
+  </head>
+  <body>
+
+    <!-- Sticky Navigation -->
+    <div class="orange" id="nav">
+      <a href=".."><img class="logo_h" src="/img/logo_h.png"></a>
+      <!-- <a href="schedule">schedule</a>
+      <a href="roster">roster</a>
+      <a href="projects">projects</a> -->
+      <div class="orange" id="navwrapper">
+        <a href="#" class="navlink">calendar</a>
+        <a href="..#sponsors" class="navlink">sponsors</a>
+        <a href="..#contact" class="navlink">contact</a>
+        <a href="" class="navlink"></a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="undernav" id="calendarwrapper">
+      <div id="calendar"></div>
+    </div>
+
+    
+
+
+  </body>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+  
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+  <script type="text/javascript" src="fullcalendar.js"></script>
+  <script type="text/javascript" src="gcal.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyD-UNSznwGRDtLZqizxTM1ku-9YS0DZkcQ',
+            events: {
+                googleCalendarId: 'michiganhackers@gmail.com'
+            },
+            header: {
+                left:   'title',
+                center: 'month,agendaWeek',
+                right:  'today prev,next',
+            },
+            eventColor : '#f15d24'
+        });
+
+    });
+  </script>
+      
+</html> 
+

@@ -41,7 +41,7 @@ body {
     z-index: 99;
 }
 
-#nav a {
+.navlink {
     display: inline-block;
     margin: 10px 10px;
     margin-top: 0;
@@ -55,21 +55,9 @@ body {
     background-repeat: repeat-x;
 }
 
-@media screen and (max-width: 775px) {
-    #nav a {
-        font-size: 18px;
-        padding: 0;
-        max-height: 61px;
-    }
-}
 
-@media screen and (max-width: 579px) {
-    #navwrapper {
-        width: 100%;
-    }
-}
 
-#nav a:hover {
+.navlink:hover {
     border-bottom: 2px solid white;
     margin-bottom: -2px;
 }
@@ -224,4 +212,54 @@ body {
 
 .orange {
     background: #ef5b2e;
+}
+
+#calendarwrapper{
+    margin: 40px auto;
+    width: 90%;
+    color: #444444;
+    font-size: 20px;
+}
+
+#calendar{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.fc-day-number  {
+    font-size: 30px;
+}
+
+div.fc-content {
+    white-space: normal;
+}
+
+.fc-content {
+    overflow: visible;
+    white-space: normal;
+}
+
+.fc-button {
+    background: white;
+    outline: none;
+}
+
+@media screen and (max-width: 790px) {
+    .navlink {
+        font-size: 18px;
+        padding: 0;
+        max-height: 61px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #navwrapper {
+        width: 100%;
+    }
+    .laptop-img {
+        margin-top: 36px;
+    }
+    #calendarwrapper {
+        margin-top: 76px;
+    }
 }
