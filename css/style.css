@@ -22,7 +22,6 @@ body {
     font-weight: 300;
     font-size: 40px; /* change with screen size */
     color: white;
-    min-width: 600px;
     margin: 0 auto;
 }
 
@@ -51,17 +50,22 @@ body {
     text-decoration: none;
 }
 
-/* Fixes words wrapping below navbar at small screen widths */
 #navwrapper {
-    max-height: 61px;
-    min-width: 600px;
+    display: inline-block;
+    background-repeat: repeat-x;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 775px) {
     #nav a {
         font-size: 18px;
-        padding: 0; /* fixes words hanging onto a new line */
+        padding: 0;
         max-height: 61px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    #navwrapper {
+        width: 100%;
     }
 }
 
@@ -72,7 +76,7 @@ body {
 
 .section {
     padding: 40px 0px;
-    height: 480px;  /* change with screen size */
+    height: 480px;
     max-height: 1000px;
     width: 100%;
     display: table;
@@ -165,11 +169,13 @@ body {
 }
 
 .btn_img img {
-    width: 120px;
+    width: 90%;
+    max-width: 120px;
 }
 
 .btn_img img:hover {
-    width: 125px;
+    width: 92%;
+    max-width: 125px;
     margin-top: -5px;
     margin-bottom: -2.5px;
 }
