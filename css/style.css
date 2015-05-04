@@ -17,6 +17,11 @@ h3 {
     font-size: 25px;
 }
 
+p {
+    color: #444444;
+    font-size: 20px;
+}
+
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -244,11 +249,31 @@ div.fc-content {
     outline: none;
 }
 
+.halfwidth {
+    color: #444444;
+    width: 45%;
+    overflow-x: hidden;
+    float: left;
+    margin-left: 3.33%;
+    margin-bottom: 6vh;
+}
+
+.projimg {
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 790px) {
     .navlink {
         font-size: 18px;
         padding: 0;
         max-height: 61px;
+    }
+    .halfwidth {
+        width: 93.34%;
+        margin-right: 3.33%;
     }
 }
 
@@ -263,3 +288,4 @@ div.fc-content {
         margin-top: 76px;
     }
 }
+
