@@ -73,7 +73,21 @@
             eventColor : '#f15d24'
         });
 
+        // $(this).trigger('resize');
     });
+
+    /* $(window).bind('resizeEnd', function() {
+        $('.fc-day-grid-container').removeAttr('style');
+        $('.fc-day-grid-container').removeClass('fc-scroller');
+        $('.fc-widget-header').css('margin-right', '-1px');
+    });
+
+    $(window).resize(function() {
+        if(this.resizeTO) clearTimeout(this.resizeTO);
+        this.resizeTO = setTimeout(function() {
+            $(this).trigger('resizeEnd');
+        }, 210);
+    }); */
   </script>
       
 </html> 

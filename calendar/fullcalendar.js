@@ -3480,6 +3480,8 @@ Grid.mixin({
 		fgSegs = this.renderFgSegs(fgSegs) || fgSegs;
 
 		this.segs = bgSegs.concat(fgSegs);
+
+
 	},
 
 
@@ -8302,6 +8304,9 @@ function Calendar_constructor(element, overrides) {
 				Array.prototype.slice.call(arguments, 2)
 			);
 		}
+		$('.fc-day-grid-container').removeAttr('style');
+        $('.fc-day-grid-container').removeClass('fc-scroller');
+        $('.fc-widget-header').css('margin-right', '-1px');
 	}
 
 }
