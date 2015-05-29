@@ -19,7 +19,7 @@
       <meta property="og:image" content="http://michiganhackers.org/img/logo_square.jpg">
       <meta property="og:url" content="http://michiganhackers.org">
       <meta property="og:description" content="Michigan Hackers exists to foster a community of individuals who enjoy expressing creativity through technology."/>
-
+      <script type="text/javascript" src="js/form.js"></script>
   </head>
   <body>
 
@@ -39,6 +39,7 @@
       <div class="orange" id="navwrapper">
         <a href="calendar" class="navlink">calendar</a>
         <a href="#sponsors" class="navlink">sponsors</a>
+        <a href="#email" class="navlink">email list</a>
         <a href="#contact" class="navlink">contact</a>
         <a href="" class="navlink"></a>
       </div>
@@ -111,6 +112,18 @@
     <!-- Contact -->
     <div class="section hack-img" id="mission3">
       <div class="mid">
+      </div>
+    </div>
+
+    <!-- Email  -->
+    <div class="section grey shorter" id="email">
+      <div class="mid">
+      <form action="javascript: submitEmail()">
+        Sign up for the email list!<br>
+        <input type="text" id="emailResponse" size="30" style="font-size: 25px;" name="emailResponse">
+        <input type="submit" value="Submit">
+        <br>
+      </form>
       </div>
     </div>
 
