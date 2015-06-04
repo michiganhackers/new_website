@@ -60,7 +60,14 @@ body {
     background-repeat: repeat-x;
 }
 
+.submitButton {
+    font-size: 25px;
+    padding: 8px;
+}
 
+.submitButton:hover {
+    background-color: rgba(0,0,0,0.5);
+}
 
 .navlink:hover {
     border-bottom: 2px solid white;
@@ -277,7 +284,7 @@ div.fc-content {
     }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 675px) {
     #navwrapper {
         width: 100%;
     }
