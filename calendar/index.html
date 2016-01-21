@@ -45,6 +45,9 @@
     <div class="undernav" id="calendarwrapper">
       <div id="calendar"></div>
     </div>
+    <div class="undernav" id="subscribelink">
+      <p style="margin: 30px; text-align: center; width: auto;">To subscribe to this calendar, please <a href="https://calendar.google.com/calendar/embed?src=8n8u58ssric1hmm84jvkvl9d68@group.calendar.google.com&ctz=America/New_York">click this link</a> and then click the "+" button in the lower right.</p>
+    </div>
 
     
 
@@ -60,21 +63,6 @@
   <script type="text/javascript" src="gcal.js"></script>
 
   <script type="text/javascript">
-
-    $(window).bind('resizeEnd', function() {
-        $('.fc-day-grid-container').removeAttr('style');
-        $('.fc-day-grid-container').removeClass('fc-scroller');
-        $('.fc-widget-header').css('margin-right', '-1px');
-    });
-
-    $(window).resize(function() {
-        if(this.resizeTO) clearTimeout(this.resizeTO);
-        this.resizeTO = setTimeout(function() {
-            $(this).trigger('resizeEnd');
-        }, 210);
-    });
-
-
     $(document).ready(function() {
         $('#calendar').fullCalendar({
             googleCalendarApiKey: 'AIzaSyD-UNSznwGRDtLZqizxTM1ku-9YS0DZkcQ',
@@ -89,9 +77,21 @@
             eventColor : '#f15d24'
         });
 
-        setTimeout( $(window).trigger('resize'), 500 );
+        // $(this).trigger('resize');
     });
 
+    /* $(window).bind('resizeEnd', function() {
+        $('.fc-day-grid-container').removeAttr('style');
+        $('.fc-day-grid-container').removeClass('fc-scroller');
+        $('.fc-widget-header').css('margin-right', '-1px');
+    });
+
+    $(window).resize(function() {
+        if(this.resizeTO) clearTimeout(this.resizeTO);
+        this.resizeTO = setTimeout(function() {
+            $(this).trigger('resizeEnd');
+        }, 210);
+    }); */
   </script>
       
 </html> 
